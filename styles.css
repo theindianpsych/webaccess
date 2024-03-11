@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Make body relative for positioning */
+}
+
+.line-horizontal {
+    width: 100%;
+    height: 1.5cm; /* Adjusted height */
+    background-color: #46a6da; /* Slightly transparent background */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.line-vertical {
+    width: 5cm; /* Adjusted width */
+    height: calc(100vh + 1.5cm); /* Adjusted height */
+    background-color: #0077b6; /* Slightly transparent background */
+    position: absolute;
+    top: -1.5cm; /* Adjusted top position */
+    left: 0;
+}
+
+.intersection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5cm; /* Adjusted width to match line-vertical */
+    height: 1.5cm; /* Adjusted height to match line-horizontal */
+    background-color: rgba(0, 0, 0, 0.2); /* Slightly transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intersection-text {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Abel', sans-serif; /* Apply Abel font */
+}
+
+/* CSS styles for the box */
+.box {
+    width: 3.8cm; /* Width of the box */
+    height: 0cm; /* Height of the box */
+    background-color: #001833; /* Background color */
+    border: 2px solid black; /* Border */
+    padding: 20px; /* Padding inside the box */
+    position: absolute; /* Set position to absolute */
+}
+
+/* Example of moving the first box to specific coordinates */
+#myBox {
+    top: 1.5cm; /* Distance from the top of the screen */
+    left: 0cm; /* Distance from the left of the screen */
+    font-family: 'Times New Roman', serif;
+}
+
+/* Example of moving the second box to specific coordinates */
+#myBox2 {
+    top: 2.5cm; /* Distance from the top of the screen */
+    left: 0cm; /* Distance from the left of the screen */
+    font-family: 'Times New Roman', serif;
+}
+
+#myBox3 {
+    top: 3.5cm; /* Distance from the top of the screen */
+    left: 0cm; /* Distance from the left of the screen */
+    font-family: 'Times New Roman', serif;
+}
+
+.box-text {
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Move text to the vertical center */
+    left: 50%; /* Move text to the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white;
+}
+
+/* CSS styles for the text */
+.big-box-text {
+    font-family: 'Courier New', monospace; /* Font family */
+    color: #333; /* Text color */
+    font-size: 56px; /* Font size */
+    text-align: center; /* Center the text horizontally */
+    position: absolute; /* Set position to absolute */
+    top: 10cm; /* Distance from the top of the screen */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Center the text horizontally */
+}
